@@ -1,7 +1,9 @@
 import express from "express" // add type:module to be able to do this
 import products from "./data/products.js"
+import dotenv from 'dotenv'
+dotenv.config()
 
-const port = 5000
+const port = process.env.PORT || 5000
 
 const app = express()
 
@@ -18,4 +20,6 @@ app.get("/api/products/:id", (req, res) => {
     res.json(product)
 })
 
-app.listen(port, () => console.log(`Server running on port ${port}`))
+app.listen(port, () => {
+    console.log(`Server running in development mode on port ${port}`);
+  });
