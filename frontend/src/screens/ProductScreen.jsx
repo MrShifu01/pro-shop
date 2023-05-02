@@ -21,46 +21,46 @@ const ProductScreen = () => {
             </Col>
             <Col md={4}>
                 <ListGroup variant='flush'>
-                    <ListGroup.Item>
+                    <ListGroupItem>
                         <h3>{product.name}</h3>
-                    </ListGroup.Item>
-                    <ListGroup.Item>
+                    </ListGroupItem>
+                    <ListGroupItem>
                         <Rating value={product.rating} text={`${product.numReviews} reviews`}/>
-                    </ListGroup.Item>
-                    <ListGroup.Item>
+                    </ListGroupItem>
+                    <ListGroupItem>
                         Price: R{product.price}
-                    </ListGroup.Item>
-                    <ListGroup.Item>
+                    </ListGroupItem>
+                    <ListGroupItem>
                         <strong>Description:</strong> {product.description}
-                    </ListGroup.Item>
+                    </ListGroupItem>
                 </ListGroup>
             </Col>
             <Col md={3}>
                 <Card>
                     <ListGroup>
-                        <ListGroup.Item>
+                        <ListGroupItem>
                             <Row>
                                 <Col>Price:</Col>
                                 <Col>
                                     <strong>{product.price}</strong>
                                 </Col>
                             </Row>
-                        </ListGroup.Item>
-                        <ListGroup.Item>
+                        </ListGroupItem>
+                        <ListGroupItem>
                             <Row>
                                 <Col>Status</Col>
                                 <Col>
                                     <strong>{product.countInStock > 0 ? "In Stock" : "Out of Stock"}</strong>
                                 </Col>
                             </Row>
-                        </ListGroup.Item>
-                        <ListGroup.Item>
+                        </ListGroupItem>
+                        <ListGroupItem>
                             <Button 
                             className='btn-block' 
                             type='button'
                             disabled={product.countInStock === 0}
                             >Add To Cart</Button>
-                        </ListGroup.Item>
+                        </ListGroupItem>
                     </ListGroup>
                 </Card>
             </Col>
