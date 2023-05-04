@@ -14,5 +14,7 @@ libraries and packages etc. {
     express,
     react,
     node,
-    dotenv
+    dotenv,
+    redux,
+    redux toolkit,
 }
