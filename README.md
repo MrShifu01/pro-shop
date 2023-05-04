@@ -17,4 +17,5 @@ libraries and packages etc. {
     dotenv,
     redux,
     redux toolkit,
+    react-redux,
 }
